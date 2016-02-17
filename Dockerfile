@@ -47,5 +47,5 @@ EXPOSE 54663
 
 # Run in foreground
 WORKDIR $BAMBOO_INSTALL_DIR
-ADD start.sh /start.sh
+COPY start.sh /start.sh
 CMD ["/start.sh"]
