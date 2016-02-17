@@ -47,4 +47,5 @@ EXPOSE 54663
 
 # Run in foreground
 WORKDIR $BAMBOO_INSTALL_DIR
-# CMD ["./bin/start-bitbucket.sh", "-fg"]
+ADD start.sh /start.sh
+CMD ["/start.sh"]
