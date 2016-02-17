@@ -5,4 +5,4 @@ set -o errexit
 mkdir -p $BAMBOO_HOME
 
 # Start
-$BAMBOO_INSTALL_DIR/bin/start-jira.sh -fg
+$BAMBOO_INSTALL_DIR/bin/start-bamboo.sh -fg
