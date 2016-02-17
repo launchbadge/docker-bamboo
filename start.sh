@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 set -o errexit
 
-# $BAMBOO_DIR/bin/catalina.sh run &
+# Start
+$BAMBOO_INSTALL_DIR/bin/start-jira.sh -fg
