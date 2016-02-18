@@ -16,6 +16,17 @@ RUN apt-add-repository ppa:webupd8team/java -y && \
     echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
     apt-get install oracle-java8-installer -y
 
+# Install agent requirements
+RUN apt-get build-dep python3
+RUN apt-get install -q -y \
+      build-essential libpq-dev swig
+
+# TODO: Install nvm + nodejs 5.x
+
+# TODO: Install docker
+
+# TODO: Run redis/postgres/rabbitmq with docker
+
 # Timezone
 ENV TZ                 America/Los_Angeles
 
